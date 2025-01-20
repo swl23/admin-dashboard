@@ -62,19 +62,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .upper {
 	display: grid;
-	grid-template-columns: 1fr 30%;
+	grid-template-columns: auto 250px;
 	grid-template-rows: 1fr;
 	align-items: center;
+	gap: clamp(50px, 5%, 200px);
+	padding: 1rem;
 }
 
 .upper .search-form {
 	display: grid;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: 50px clamp(150px, 90%, 850px);
 }
 
 .upper .user-info {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 50px 50px auto;
 }
 
 .sidebar {
