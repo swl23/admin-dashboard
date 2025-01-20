@@ -62,6 +62,17 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid green;
 	background-color: rgb(222, 255, 222);
 	grid-row: 1 / 3;
+	display: grid;
+	grid-template-rows:
+		[dashboard-top] auto
+		[dashboard-bottom menu-top] auto
+		[menu-bottom help-top] auto
+		[help-bottom];
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 .banner, .menu, .help {
@@ -69,9 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.sidebar ul {
-	list-style-type: none;
-	padding: 0;
+.menu ul, .help ul {
+	display: grid;
 }
 
 .content {
