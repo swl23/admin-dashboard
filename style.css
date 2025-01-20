@@ -65,18 +65,21 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-columns: auto 250px;
 	grid-template-rows: 1fr;
 	align-items: center;
-	gap: clamp(50px, 5%, 200px);
-	padding: 1rem;
+	width: clamp(400px, 100%, 1920px);
+	gap: clamp(50px, 10%, 350px);
+	padding: 1.5rem;
 }
 
 .upper .search-form {
 	display: grid;
-	grid-template-columns: 50px clamp(150px, 90%, 850px);
+	grid-template-columns: auto 1fr;
+	gap: 25px;
 }
 
 .upper .user-info {
 	display: grid;
-	grid-template-columns: 50px 50px auto;
+	grid-template-columns: auto auto 1fr;
+	gap: 25px;
 }
 
 .sidebar {
@@ -88,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-rows: 1fr 1fr 1fr 100%;
 	align-items: start;
 	gap: 50px;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 .sidebar ul {
@@ -98,7 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner, .menu, .help {
 	display: grid;
-	grid-template-columns: 50px auto;
+	grid-template-columns: auto 1fr;
+	gap: 25px;
 }
 
 .menu ul {
