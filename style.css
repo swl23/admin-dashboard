@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-rows: 1fr;
 	column-gap: 25px;
 	align-items: center;
+	justify-self: end;
 }
 
 .welcome .avatar {
