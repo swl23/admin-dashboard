@@ -174,7 +174,18 @@ body > .container {
 	display: grid;
 }
 
-.announcements .content-box > * {
+.content-box .news-piece,
+.content-box .trend {
 	padding: 1rem;
 	align-content: center;
+}
+
+.content-box .trend {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+}
+
+.trend .avatar {
+	grid-row: 1 / 3;
 }
