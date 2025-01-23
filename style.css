@@ -183,9 +183,42 @@ body > .container {
 .content-box .trend {
 	display: grid;
 	grid-template-rows: auto auto;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto 1fr;
+	column-gap: 25px;
 }
 
 .trend .avatar {
 	grid-row: 1 / 3;
+}
+
+.projects .content-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: minmax(250px, 300px);
+	gap: 25px;
+}
+
+.projects .content-box .card {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	padding: 25px;
+}
+
+.card .name {
+	grid-row: 1;
+}
+
+.card .description {
+	grid-row: 2;
+	
+}
+
+.card ul {
+	grid-row: 3;
+	align-self: end;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr auto auto auto;
+	justify-items: end;
+	column-gap: 15px;
 }
